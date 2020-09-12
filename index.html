@@ -2,258 +2,288 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/custom.css">
-  <link rel="stylesheet" href="assets/megaMenu.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/custom.css">
+    <link rel="stylesheet" href="assets/megaMenu.css">
 
-  <style type="text/css">
-    @media all and (min-width: 992px) {
-      .navbar{ padding-top: 0; padding-bottom: 0; }
-      .navbar .has-megamenu{position:static!important;}
-      .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
-      .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
-    }
-  </style>
+    <style type="text/css">
+        @media all and (min-width: 992px) {
+            .navbar {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .navbar .nav-link {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+    </style>
 
 
-  <title>Hello, world!</title>
+    <title>Hello, world!</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg jatra-kingdom-main-header">
+<nav class="navbar navbar-expand-lg jatra-kingdom-main-header">
     <div class="container-fluid">
-      <div class="header-logo">
-        <img src="./assets/images/jatra.png" alt="" class="jatra-logo">
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="header-logo">
+            <img src="./assets/images/jatra.png" alt="" class="jatra-logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="row w-100">
+                <div class="col-sm-12 offset-md-2 col-md-8">
+                    <h1 class="text-white">Import NOP SEARCH HERE</h1>
+                </div>
+
+                <div class="col-sm-12 col-md-2 text-right">
+                    <i class="fas fa-shopping-cart text-white mr-md-5 fa-lg"></i>
+
+                    <a data-toggle="modal" data-target="#modalLoginForm">
+                        <i class="fas fa-shopping-cart text-white fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg jatra-kingdom-mini-header">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false"
+            aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <div class="row w-100">
-          <div class="col-sm-12 offset-md-2 col-md-8">
-            <h1 class="text-white">Import NOP SEARCH HERE</h1>
-          </div>
-
-          <div class="col-sm-12 col-md-2 text-right">
-            <i class="fas fa-shopping-cart text-white mr-md-5 fa-lg"></i>
-
-            <a data-toggle="modal" data-target="#modalLoginForm">
-              <i class="fas fa-shopping-cart text-white fa-lg"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- <div class="mini-navbar">
-    <div class="container-fluid">
-      <div class="mini-nav-dropdown">
-        <button class="dropbtn" id="todayDeals" onclick="clickMegaMenuItem(0)">
-          Today's Deals
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="mini-nav-dropdown-content" aria-labelledby="navbarDropdown">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h3>Category 1</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="col">
-                <h3>Category 2</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="col">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mini-nav-dropdown">
-        <button class="dropbtn" id="oneStopShop" onclick="clickMegaMenuItem(1)">
-          One stop shop
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="mini-nav-dropdown-content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h3>Category 1</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mini-nav-dropdown">
-        <button class="dropbtn" id="cosplayHeaven" onclick="clickMegaMenuItem(2)">
-          Cosplay Heaven
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="mini-nav-dropdown-content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h3>Category 1</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="col">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mini-nav-dropdown">
-        <button class="dropbtn" id="Services" onclick="clickMegaMenuItem(3)">
-          Services
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="mini-nav-dropdown-content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h3>Category 1</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="col">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="mini-nav-dropdown">
-        <button class="dropbtn" id="killerDeals" onclick="clickMegaMenuItem(4)">
-          Killer Deals
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="mini-nav-dropdown-content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <h3>Category 2</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="col">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div> -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-
-    <a class="navbar-brand" href="#">Brand</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main_nav">
-  
-  <ul class="navbar-nav">
-    <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-    <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-    <li class="nav-item dropdown has-megamenu" role="menu">
-      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Mega menu  </a>
 
-      <div class="dropdown-menu megamenu" role="menu">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="col-megamenu">
-                  <h6 class="title">Title Menu One</h6>
-                  <ul class="list-unstyled">
-                      <li><a href="#">Custom Menu</a></li>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown has-megamenu" role="menu">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Today's Deals </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">FIGURINES</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Marvel</a></li>
+                                            <li><a href="#">DC</a></li>
+                                            <li><a href="#">Anime</a></li>
+                                            <li><a href="#">Collectibles</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                      <li><a href="#">Custom Menu</a></li>
-                  </ul>
-                </div>  <!-- col-megamenu.// -->
-            </div><!-- end col-3 -->
-            <div class="col-md-3">
-              <div class="col-megamenu">
-                <h6 class="title">Title Menu Two</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-  
-                        <li><a href="#">Custom Menu</a></li>
-                    </ul>
-                </div>  <!-- col-megamenu.// -->
-            </div><!-- end col-3 -->
-            <div class="col-md-3">
-              <div class="col-megamenu">
-                <h6 class="title">Title Menu Three</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-    
-                        <li><a href="#">Custom Menu</a></li>
-                    </ul>
-                </div>  <!-- col-megamenu.// -->
-            </div>    
-            <div class="col-md-3">
-              <div class="col-megamenu">
-                <h6 class="title">Title Menu Four</h6>
-                    <ul class="list-unstyled">
-                        
-                        <li><a href="#">Custom Menu</a></li>
-                    </ul>
-                </div>  <!-- col-megamenu.// -->
-            </div><!-- end col-3 -->
-        </div><!-- end row --> 
-</div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">APPAREL & CLOTHING</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Jackets & Hoodies</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
+                                <div class="col-md-4 mb-4">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">CUSTOM DESIGNS</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Badges</a></li>
+                                            <li><a href="#">Posters</a></li>
+                                            <li><a href="#">Mobile Covers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-    </li>
-    <li class="nav-item dropdown has-megamenu">
-      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Mega menu  </a>
-        <div class="dropdown-menu megamenu" role="menu">
-                      <div class="row">
-                          <div class="col-md-3">
-                              <div class="col-megamenu">
+                                <div class="col-md-4 mb-4">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">GO INDIE</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Art Boards</a></li>
+                                            <li><a href="#">Commissioned Work</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="col-megamenu">
+                                        <h6 class="title">ARTS & CRAFTS</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Paint Brushes</a></li>
+
+                                            <li><a href="#">Canvases</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://picsum.photos/200/300?grayscale" style='height:200px'
+                                             class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://picsum.photos/200/300/?blur" style='height:200px'
+                                             class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2"
+                                             style='height:200px' class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                   data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                   data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <h6 class="text-center my-2">
+                                Deals Info here
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu" role="menu">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">One Stop Shop</a>
+
+                <div class="dropdown-menu megamenu" role="menu">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu One</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Two</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Three</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Four</h6>
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu" role="menu">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Mega menu </a>
+
+                <div class="dropdown-menu megamenu" role="menu">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu One</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Two</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Three</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
+                                <h6 class="title">Title Menu Four</h6>
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                    </div><!-- end row -->
+                </div>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Mega menu </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-megamenu">
                                 <h6 class="title">Title Menu One</h6>
                                 <ul class="list-unstyled">
                                     <li><a href="#">Custom Menu</a></li>
@@ -263,123 +293,855 @@
                                     <li><a href="#">Custom Menu</a></li>
                                     <li><a href="#">Custom Menu</a></li>
                                 </ul>
-                              </div>  <!-- col-megamenu.// -->
-                          </div><!-- end col-3 -->
-                          <div class="col-md-3">
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
                             <div class="col-megamenu">
-                              <h6 class="title">Title Menu Two</h6>
-                                  <ul class="list-unstyled">
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                  </ul>
-                              </div>  <!-- col-megamenu.// -->
-                          </div><!-- end col-3 -->
-                          <div class="col-md-3">
+                                <h6 class="title">Title Menu Two</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                        <div class="col-md-3">
                             <div class="col-megamenu">
-                              <h6 class="title">Title Menu Three</h6>
-                                  <ul class="list-unstyled">
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                  </ul>
-                              </div>  <!-- col-megamenu.// -->
-                          </div>    
-                          <div class="col-md-3">
+                                <h6 class="title">Title Menu Three</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div>
+                        <div class="col-md-3">
                             <div class="col-megamenu">
-                              <h6 class="title">Title Menu Four</h6>
-                                  <ul class="list-unstyled">
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                      <li><a href="#">Custom Menu</a></li>
-                                  </ul>
-                              </div>  <!-- col-megamenu.// -->
-                          </div><!-- end col-3 -->
-                      </div><!-- end row --> 
-          </div> <!-- dropdown-mega-menu.// -->
-    </li>
-  </ul>
-  
-  
-  <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
-      <li class="nav-item dropdown">
-          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown </a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-          </ul>
-      </li>
-  
-  </ul>
-  
+                                <h6 class="title">Title Menu Four</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                    <li><a href="#">Custom Menu</a></li>
+                                </ul>
+                            </div>  <!-- col-megamenu.// -->
+                        </div><!-- end col-3 -->
+                    </div><!-- end row -->
+                </div> <!-- dropdown-mega-menu.// -->
+            </li>
+        </ul>
     </div> <!-- navbar-collapse.// -->
-  
-  </nav>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+</nav>
 
-        <div class="row login-modal">
-          <div class="col-md-3 p-0"
-            style="background: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
-            I AM A DISCO DANCERR
-          </div>
-
-          <div class="col-md-9 col-sm-12">
-            <h1> NOP LOGIN COMPONENT IMPORT HERE </h1>
-          </div>
+<div class="container-fluid">
+    <div class="section banner-section my-md-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/960?grayscale" class="d-block w-100 banner-image-height " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/960?grayscale" class="d-block w-100 banner-image-height" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/960?grayscale" class="d-block w-100 banner-image-height " alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-      </div>
     </div>
-  </div>
 
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- <script>
-    // This script is for contrlling the mega menu
+    <div class="section mini-poster-section my-md-5">
+        <div class="row w-100">
+            <div class="col-sm-12 col-md-3 d-flex">
+                <img src="https://picsum.photos/960" alt="" class="mini-poster-image">
+            </div>
 
-    let todayDeals = document.getElementById('todayDeals');
-    let oneStopShop = document.getElementById('oneStopShop');
-    let cosplayHeaven = document.getElementById('cosplayHeaven');
-    let services = document.getElementById('services');
-    let killerDeals = document.getElementById('killerDeals');
-    let megaMenuDropDown = document.querySelectorAll('.mini-nav-dropdown-content')
+            <div class="col-sm-12 col-md-9">
+                <h1 class="text-right text-white">
+                    The Featured List
+                </h1>
 
-    const clickMegaMenuItem = (i) => {
-      megaMenuDropDown[i].style.display = 'block'
-    }
-  </script> -->
+                <p class="text-right text-white w-50 float-right">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Est, neque, nulla. Aliquam autem doloribus
+                    eius enim, esse incidunt laudantium
+                </p>
+                <br>
+                <br>
+                <br>
 
-  <script type="text/javascript">
-    /// some script
-    
-    // jquery ready start
-    $(document).ready(function() {
-      // jQuery code
-    
-      //////////////////////// Prevent closing from click inside dropdown
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"
+                     style="background: white">
+                    <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 px-1 ">
+                                <div class="card mb-2 carousel-cards">
+                                    <img class="card-img-top"
+                                         src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
+
+                    </div>
+                    <!--/.Slides-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section mini-figures-section my-md-5">
+        <div class="row w-100">
+            <div class="col-sm-12 col-md-2 py-2 px-0">
+                <div class="row blue-text">
+                    <div class="col-6">
+                        <h1 class="vertical-text font-weight-bold display-4 blue-text">
+                            MINI FIGURES
+                        </h1>
+                    </div>
+
+                    <div class="col-6 px-0">
+                        <p class="blue-text">
+                            Mini Figurines by Funko Pop Collection <br>
+                            <br>
+
+                            Limited Edition Designs with extra collectors hardcover packaging
+
+                            <br>
+
+                            <button type="button" class="btn btn-outline-primary mt-3 btn-block">View All</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-10 pl-5">
+                <div class="row w-100">
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section star-of-the-day-section my-md-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <img src="https://picsum.photos/960" alt="" class="star-of-the-day-poster-image">
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+                <div class="row">
+                    <div class="col-sm-5 d-flex justify-content-center align-items-center text-right star-of-the-day-card">
+                        <div class="blue-text">
+                            <h2 class="font-weight-bold">Star of the day</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aut autem
+                                dignissimos eius impedit</p>
+
+                            <p>NRS 2000</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 p-0">
+                        <img src="https://picsum.photos/960" alt="" class="star-of-the-day-post-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section icons-section my-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/70?grayscale" alt="" class="icon-sections__images">
+                <span class=" ml-2 text-lg-center">Hello</span>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/70?grayscale" alt="" class="icon-sections__images">
+                <span class=" ml-2 text-lg-center">Hello</span>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/70?grayscale" alt="" class="icon-sections__images">
+                <span class=" ml-2 text-lg-center">Hello</span>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/70?grayscale" alt="" class="icon-sections__images">
+                <span class=" ml-2 text-lg-center">Hello</span>
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/70?grayscale" alt="" class="icon-sections__images">
+                <span class=" ml-2 text-lg-center">Hello</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="section plastic-model-kits-section px-md-5 py-md-2 my-md-5">
+        <h4>PLASTIC MODEL KITS</h4>
+
+        <div id="multi-item-example-2" class="carousel slide carousel-multi-item" data-ride="carousel"
+             style="background: white">
+            <a class="carousel-control-prev" href="#multi-item-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#multi-item-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#multi-item-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#multi-item-example-2" data-slide-to="1"></li>
+                <li data-target="#multi-item-example-2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-1 ">
+                        <div class="card mb-2 carousel-cards">
+                            <img class="card-img-top"
+                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+    </div>
+
+    <div class="section full-size-poster mb-md-5">
+        <div class="full-size-poster-container">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt=""
+                 class="full-size-poster">
+            <div class="centered-right">
+                <h1> This is another full size poster</h1>
+
+                <h6> this is another full size poster</h6>
+
+                <button class="btn btn-md btn-outline-warning">View All</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section shop-by-character-section mb-5">
+        <h2 class="blue-text w-50">
+            SHOP BY CHARACTERS
+        </h2>
+
+        <p class="blue-text w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis deleniti ea error fugiat laboriosam
+            quisquam reiciendis.</p>
+
+        <div class="row">
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-1">
+                <div class="card p-0" >
+                    <img class="shop-by-character-card-image card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section super-exclusive-section my-5">
+        <div class="text-right text-warning">
+            <h1 class="display-4 ">
+                S U P E R <span class="ml-5" />  E X C L U S I V E
+            </h1>
+
+            <h6> these are super exclusive products super exclusive products </h6>
+        </div>
+
+        <div id="superExclusiveCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/download.jpeg" class="d-block w-100 banner-image-height " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/960?grayscale" class="d-block w-100 banner-image-height" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/960?grayscale" class="d-block w-100 banner-image-height " alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#superExclusiveCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#superExclusiveCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="row login-modal">
+                <div class="col-md-3 p-0"
+                     style="background: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                    I AM A DISCO DANCERR
+                </div>
+
+                <div class="col-md-9 col-sm-12">
+                    <h1> NOP LOGIN COMPONENT IMPORT HERE </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
         $(document).on('click', '.dropdown-menu', function (e) {
-          e.stopPropagation();
+            e.stopPropagation();
         });
-        
-      
-    }); // jquery end
-    </script>
+    });
+</script>
+
+<style>
+    @media (min-width: 768px) {
+        .carousel-multi-item [class*="col-"] {
+            float: left;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .carousel-multi-item [class*="col-"] {
+            float: left;
+        }
+    }
+</style>
+
 </body>
 
 </html>

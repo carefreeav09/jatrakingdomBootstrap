@@ -4,10 +4,16 @@ root {
     --primary : #2e2e2e;
     --secondary: #eeb236;
     --text : #e3e3e3;
+    --blue-text : #87a5df;
 }
 
 body {
     font-family: 'Raleway', sans-serif !important;
+    background: #2e2e2e;
+}
+
+.blue-text {
+    color: #87a5df !important;
 }
 
 /* Header */
@@ -36,4 +42,103 @@ body {
 
 .login-modal{
     min-height: 400px;
+}
+
+.banner-image-height {
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.mini-poster-image {
+    min-height: 60vh;
+    width: 100%;
+}
+
+.carousel-control-next-icon {
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+}
+
+.carousel-cards {
+    border: 0;
+}
+
+.carousel-cards img {
+    height: 300px;
+}
+
+/*Vertical Text*/
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+/*star of the day section*/
+
+.star-of-the-day-card {
+    background: white;
+}
+
+.star-of-the-day-poster-image {
+    height: 60vh;
+    width: 100%;
+}
+
+.star-of-the-day-post-image {
+    height: 60vh;
+    width: 100%;
+}
+
+/*icons section*/
+
+.icons-section {
+    background: #0282f9;
+    padding: 3rem;
+    color: white
+}
+
+.icon-sections__images {
+    height: 60px;
+    width: 60px;
+}
+
+/*Model kits section*/
+
+.plastic-model-kits-section {
+    background: white;
+}
+
+/*Full size poster*/
+
+.full-size-poster-container {
+    position: relative;
+    text-align: right;
+    color: white;
+
+}
+
+.full-size-poster {
+    width: 100%;
+    height: 50vh;
+}
+
+.centered-right {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 25%;
+}
+
+/*Shop by card container*/
+
+.shop-by-character-card-image {
+    min-height: 40vh;
 }

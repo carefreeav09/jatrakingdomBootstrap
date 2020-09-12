@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0d5a577-cfd5-4061-9e23-50322b29f4dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/megaMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/megaMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hMvdo2dGcmFUMA1ALQLgWGSUo0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0d5a577-cfd5-4061-9e23-50322b29f4dc" name="Default Changelist" comment="" />
+      <created>1599833866186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599833866186</updated>
+      <workItem from="1599833867405" duration="12034000" />
+      <workItem from="1599881313499" duration="7304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="1189" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599846388035">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state x="693" y="1189" width="524" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/249.0.1440.900/0.900.1920.1080@0.900.1920.1080" timestamp="1599846388035" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1599833940329">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom/249.0.1440.900/0.900.1920.1080@0.900.1920.1080" timestamp="1599833940329" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1599833940328">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.center/249.0.1440.900/0.900.1920.1080@0.900.1920.1080" timestamp="1599833940328" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1599833940327">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.left/249.0.1440.900/0.900.1920.1080@0.900.1920.1080" timestamp="1599833940327" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1599833940328">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.right/249.0.1440.900/0.900.1920.1080@0.900.1920.1080" timestamp="1599833940328" />
+  </component>
+</project>
