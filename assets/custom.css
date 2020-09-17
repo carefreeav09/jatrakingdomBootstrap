@@ -16,6 +16,24 @@ body {
     color: #87a5df !important;
 }
 
+.border-1 {
+    border: 1px solid white;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
 /* Header */
 
 .header-logo {
@@ -142,3 +160,54 @@ body {
 .shop-by-character-card-image {
     min-height: 40vh;
 }
+
+
+/* Careers page  */
+
+.careers-section {
+    background: white;
+}
+
+/* commission work */
+
+.commission-work {
+    background: white;
+}
+
+/* Product Page */
+
+.product-page a {
+    color: #eeb236
+}
+
+.product-page .breadcrumb {
+    background: transparent;
+    color: white;
+}
+
+.product-page .breadcrumb a {
+    color: white;
+}
+
+.product-gallery-images {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 80px;
+    width: auto;
+    margin: 5px 10px;
+  }
+  
+  .product-gallery-images:hover {
+    opacity: 1;
+  }
+
+  #expandedImg {
+      height: 50vh;
+  }
+
+  .color-boxes {
+      margin-top: 10px;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+  }

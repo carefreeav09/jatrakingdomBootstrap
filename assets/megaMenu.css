@@ -5,4 +5,7 @@
     .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem; color: white  }
     .col-megamenu ul li a { color : white; padding: 10px; font-size: large }
     .jatra-kingdom-mini-header { height: 30px }
+    .todaydeals-image {
+        height: 150px;
+    }
 }
