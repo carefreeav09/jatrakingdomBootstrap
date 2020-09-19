@@ -12,6 +12,12 @@ body {
     background: #2e2e2e;
 }
 
+.btn-primary {
+    background: #eeb236;
+    color: white;
+    border: transparent;
+}
+
 .blue-text {
     color: #87a5df !important;
 }
@@ -32,7 +38,67 @@ body {
     align-items: center;
 }
 
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.flex-vertical-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer {
+    background: #E4AF21;
+    color: #fff;
+    padding: 3rem 1.5rem; }
+  
+  .footer a {
+    color: #fff; }
+
+    .figure img {
+        width: 100%;
+        height: 300px;
+      }
+      
+      .image {
+        display: block;
+        position: relative;
+      }
+      
+      .image img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      
+      .image__64x64 {
+        height: 64px;
+        width: 64px;
+      }
+      
+      .image__90x90 {
+        height: 90px;
+        width: 90px;
+      }
+      
+      .image__128x128 {
+        height: 128px;
+        width: 128px;
+      }
+      
+      .image__200x256 {
+        height: 200px;
+        width: 256px;
+      }
+      
+      .image__32x32 {
+        height: 32px;
+        width: 32px;
+      }
 
 /* Header */
 
@@ -164,15 +230,14 @@ body {
 
 /* Careers page  */
 
-.careers-section {
-    background: white;
+.careers-card-body {
+    background:#2e2e2e ;
+    color: white;
+    border-bottom: 1px solid white
 }
+
 
 /* commission work */
-
-.commission-work {
-    background: white;
-}
 
 /* Product Page */
 
@@ -211,3 +276,119 @@ body {
       width: 20px;
       display: inline-block;
   }
+
+  .boxed-span {
+    border: 1px solid gainsboro;
+    color: black !important;
+  }
+
+  .checkout-box-badges {
+    transform: translate(-41px, 37px);
+    font-size: 1rem;
+    background: linear-gradient(90deg,#5082e4,#52bcf8);
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 7px 16px;
+    border-radius: 50%;
+}
+
+
+.is-size-1 {
+    font-size: 3rem !important; }
+  
+  .is-size-2 {
+    font-size: 2.5rem !important; }
+  
+  .is-size-3 {
+    font-size: 2rem !important; }
+  
+  .is-size-4 {
+    font-size: 1.5rem !important; }
+  
+  .is-size-5 {
+    font-size: 1.25rem !important; }
+  
+  .is-size-6 {
+    font-size: 1rem !important; }
+  
+  .is-size-7 {
+    font-size: 0.75rem !important; }
+  
+  @media screen and (max-width: 768px) {
+  .is-size-1-mobile {
+    font-size: 3rem !important; }
+  .is-size-2-mobile {
+    font-size: 2.5rem !important; }
+  .is-size-3-mobile {
+    font-size: 2rem !important; }
+  .is-size-4-mobile {
+    font-size: 1.5rem !important; }
+  .is-size-5-mobile {
+    font-size: 1.25rem !important; }
+  .is-size-6-mobile {
+    font-size: 1rem !important; }
+  .is-size-7-mobile {
+    font-size: 0.75rem !important; } }
+  
+  @media screen and (min-width: 769px), print {
+  .is-size-1-tablet {
+    font-size: 3rem !important; }
+  .is-size-2-tablet {
+    font-size: 2.5rem !important; }
+  .is-size-3-tablet {
+    font-size: 2rem !important; }
+  .is-size-4-tablet {
+    font-size: 1.5rem !important; }
+  .is-size-5-tablet {
+    font-size: 1.25rem !important; }
+  .is-size-6-tablet {
+    font-size: 1rem !important; }
+  .is-size-7-tablet {
+    font-size: 0.75rem !important; } }
+  
+  @media screen and (max-width: 1023px) {
+  .is-size-1-touch {
+    font-size: 3rem !important; }
+  .is-size-2-touch {
+    font-size: 2.5rem !important; }
+  .is-size-3-touch {
+    font-size: 2rem !important; }
+  .is-size-4-touch {
+    font-size: 1.5rem !important; }
+  .is-size-5-touch {
+    font-size: 1.25rem !important; }
+  .is-size-6-touch {
+    font-size: 1rem !important; }
+  .is-size-7-touch {
+    font-size: 0.75rem !important; } }
+  
+  @media screen and (min-width: 1024px) {
+  .is-size-1-desktop {
+    font-size: 3rem !important; }
+  .is-size-2-desktop {
+    font-size: 2.5rem !important; }
+  .is-size-3-desktop {
+    font-size: 2rem !important; }
+  .is-size-4-desktop {
+    font-size: 1.5rem !important; }
+  .is-size-5-desktop {
+    font-size: 1.25rem !important; }
+  .is-size-6-desktop {
+    font-size: 1rem !important; }
+  .is-size-7-desktop {
+    font-size: 0.75rem !important; } }
+  
+  .title.is-1 {
+    font-size: 3rem;
+  }
+  
+  .title:not(.is-spaced) + .subtitle {
+    margin-top: -1.25rem;
+  }
+  
+  .subtitle.is-4 {
+    font-size: 1.5rem;
+  }
+  
+  

@@ -367,208 +367,256 @@
 
     </nav>
 
-    <div class="commission-work text-white">
+    <div class="container-fluid py-md-5">
 
-        <div class="container p-md-5">
+        <div class="row px-md-5">
+            <div class="col-sm-12 col-md-7">
 
-            <p class="offset-md-2 "> 
-                Please fill out the form below. We respect your privacy 100%, so the information that you provide will remain strictly confidential.
-            </p>
-            <form>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="name">Name</label>
-                        </div>
+                <div class="card w-100 mb-5 p-md-3" id="billing">
 
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
-                        </div>
-                    </div>
-                </div>
+                    <h4 onclick="handleBillingClick()" style="cursor: pointer;">Billing </h1>
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="personalCellNumber">Personal Cell Numbers</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="personalCellNumber"
-                                aria-describedby="personalCellNumberHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="dateOfDelivery">Date of Delivery</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="dateOfDelivery"
-                                aria-describedby="dateOfDeliveryHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="nameOfCharacter">Name Of Character</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="nameOfCharacter"
-                                aria-describedby="nameOfCharacterHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="form">Form</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="text" class="form-control" id="form" aria-describedby="formHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="name">Category</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                                <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
+                        <div id="billingEL">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
                             </div>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                                <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                                <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
+                            <button type="button" class="btn btn-primary"
+                                onclick="handleBillingSubmit()">Submit</button>
+                        </div>
 
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                                <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
+                </div>
+
+                <div class="card w-100 mb-5 p-md-3" id="shipping">
+
+                    <h4 onclick="handleShippingClick()" style="cursor: pointer;">Shipping </h1>
+
+                        <div id="shippingEL" style="display: none;">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                onclick="handlePaymentSubmit()">Submit</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="name">Request Description</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <textarea type="text" class="form-control" rows="10" id="requestDescription"
-                                aria-describedby="nameHelp">
-                            </textarea>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="nameOfCharacter">Upload File</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="file">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="nameOfCharacter">Upload File</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="file">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <label for="nameOfCharacter">Upload File</label>
-                        </div>
-
-                        <div class="col-md-8 col-sm-12">
-                            <input type="file">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group form-check">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12">
-                        </div>
-
-                        <div class="col-md-10 col-sm-12">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Accept terms and condition
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group form-check">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12">
-                        </div>
-
-                        <div class="col-md-10 col-sm-12">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                                Accept Privacy Policy
-                            </label>
-                        </div>
-                    </div>
                 </div>
 
 
-                <div class="row">
-                    <div class="offset-md-2 col-md-10 col-sm-12">
-                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <div class="card w-100 mb-5 p-md-3" id="payment">
+
+                    <h4 onclick="handlePaymentClick()" style="cursor: pointer;">Payment </h1>
+
+                        <div id="paymentEL" style="display: none;">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                onclick="handlePaymentSubmit()">Submit</button>
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+                <div class="card w-100 mb-5 p-md-3">
+                    <div class="flex-space-between">
+                        <h5>
+                            Order Summary
+                        </h5>
+
+                        <a href="">Edit</a>
+                    </div>
+
+                    <div class="flex-space-between">
+                        <p>Starry Night</p>
+
+                        <p>x6</p>
+
+                        <p>$79.95</p>
+                    </div>
+
+                    <hr style="background: gainsboro; border: 1px solid gainsboro;">
+
+                    <p class="mt-2">
+                        Shipping and taxes will be calculated after an address is provided
+                    </p>
+
+                    <div class="flex-space-between">
+                        <h5>
+                            Total
+                        </h5>
+
+                        <a href="">$479.00</a>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-
     </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).on('click', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        let billingEl = document.getElementById('billingEL');
+        let shippingEl = document.getElementById('shippingEL');
+        let paymentEl = document.getElementById('paymentEL');
+
+        const activatedTabs = ['billing'];
+
+        const handleBillingSubmit = () => {
+            billingEl.style.display = 'none';
+            paymentEl.style.display = 'none';
+            shippingEl.style.display = 'block';
+            activatedTabs.push('shipping');
+        };
+
+        const handlePaymentSubmit = () => {
+            billingEl.style.display = 'none';
+            paymentEl.style.display = 'block';
+            shippingEl.style.display = 'none';
+            activatedTabs.push('payment');
+        }
+
+        const handleBillingClick = () => {
+            billingEl.style.display = 'block';
+            paymentEl.style.display = 'none';
+            shippingEl.style.display = 'none';
+        }
+
+        const handleShippingClick = () => {
+            if (activatedTabs.includes('shipping')) {
+                billingEl.style.display = 'none';
+                paymentEl.style.display = 'none';
+                shippingEl.style.display = 'block';
+            }
+
+        }
+
+        const handlePaymentClick = () => {
+            if (activatedTabs.includes('payment')) {
+                billingEl.style.display = 'none';
+                paymentEl.style.display = 'block';
+                shippingEl.style.display = 'none';
+            }
+
+        }
+
+    </script>
+
+    <!-- Login Modal  -->
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="row login-modal">
+                    <div class="col-md-3 p-0"
+                        style="background: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                    </div>
+
+                    <div class="col-md-9 col-sm-12 p-md-5">
+                        <form class="" style="color: #757575;" action="#!">
+
+                            <!-- Email -->
+                            <div class="md-form">
+                                <label for="materialLoginFormEmail">E-mail</label>
+                                <input type="email" id="materialLoginFormEmail" class="form-control">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="md-form">
+                                <label for="materialLoginFormPassword">Password</label>
+                                <input type="password" id="materialLoginFormPassword" class="form-control">
+                            </div>
+
+                            <div class="d-flex justify-content-around">
+                                <div>
+                                    <!-- Remember me -->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                                        <label class="form-check-label" for="materialLoginFormRemember">Remember
+                                            me</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- Forgot password -->
+                                    <a href="">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                                type="submit">Sign in</button>
+
+                            <!-- Register -->
+                            <p>Not a member?
+                                <a href="">Register</a>
+                            </p>
+
+                            <!-- Social login -->
+                            <p>or sign in with:</p>
+                            <a type="button" class="btn-floating btn-fb btn-sm">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-tw btn-sm">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-li btn-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-git btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -662,18 +710,19 @@
         </div>
     </footer>
 
+    <style>
+        @media (min-width: 768px) {
+            .carousel-multi-item [class*="col-"] {
+                float: left;
+            }
+        }
 
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(document).on('click', '.dropdown-menu', function (e) {
-                e.stopPropagation();
-            });
-        });
-    </script>
+        @media (min-width: 768px) {
+            .carousel-multi-item [class*="col-"] {
+                float: left;
+            }
+        }
+    </style>
 
 </body>
 

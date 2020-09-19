@@ -363,65 +363,107 @@
 
 </nav>
 
-    <div class="careers-section p-md-5 ">
-       
-    <h1 class="display-4 text-white">
-        CAREERS
-    </h1>
-    
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-12 col-md-12 mb-md-5">
-                <div class="card careers-card-body">
-                    <div class="card-body">
-                      <h4 class="card-title"><a>Procurement Officer</a></h4>
-    
-                      <h6>Logistics</h6>
-    
-                      <div class="row">
-                          <div class="col-8">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
-                          </div>
-    
-                          <div class="col-4 text-right">
-                            <a href="#" class="btn btn-secondary btn-lg">Apply</a>
-                          </div>
-                      </div>
-                     
-                  
-                    </div>
-                  
-                  </div>
+<div class="container-fluid p-md-5 text-white">
+    <h1 class="text-center mt-5">FAQ</h1>
+
+    <div class="list-group mt-3 list-group-flush my-5">
+        <a href="#" class="list-group-item list-group-item-action mb-5">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">QUESTIONS 1</h5>
             </div>
-    
-            <div class="col-sm-12 col-md-12">
-                <div class="card careers-card-body">
-                    <div class="card-body">
-                      <h4 class="card-title"><a>Procurement Officer</a></h4>
-    
-                      <h6>Logistics</h6>
-    
-                      <div class="row">
-                          <div class="col-8">
-                            Some quick example text to build on the card title and make up the bulk of the card's
-                            content.
-                          </div>
-    
-                          <div class="col-4 text-right">
-                            <a href="#" class="btn btn-secondary btn-lg">Apply</a>
-                          </div>
-                      </div>
-                     
+            <p class="mb-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis consequatur magni nihil
+                nostrum nulla quaerat velit, voluptate! Aperiam doloribus illo, impedit magni mollitia possimus
+                repellendus saepe sapiente voluptatum?
+            </p>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">QUESTIONS 2</h5>
+            </div>
+            <p class="mb-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis consequatur magni nihil
+                nostrum nulla quaerat velit, voluptate! Aperiam doloribus illo, impedit magni mollitia possimus
+                repellendus saepe sapiente voluptatum?
+            </p>
+        </a>
+    </div>
+
+    <div class="m-auto text-center">
+        <button class="m-auto btn btn-primary btn-lg">
+            Contact Us
+        </button>
+    </div>
+
+</div>
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="row login-modal">
+                <div class="col-md-3 p-0"
+                     style="background: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')">
+                </div>
+
+                <div class="col-md-9 col-sm-12 p-md-5">
+                    <form class="" style="color: #757575;" action="#!">
+
+                        <!-- Email -->
+                        <div class="md-form">
+                            <label for="materialLoginFormEmail">E-mail</label>
+                          <input type="email" id="materialLoginFormEmail" class="form-control">
+                        </div>
                   
-                    </div>
+                        <!-- Password -->
+                        <div class="md-form">
+                            <label for="materialLoginFormPassword">Password</label>
+                          <input type="password" id="materialLoginFormPassword" class="form-control">
+                        </div>
                   
-                  </div>
+                        <div class="d-flex justify-content-around">
+                          <div>
+                            <!-- Remember me -->
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                              <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+                            </div>
+                          </div>
+                          <div>
+                            <!-- Forgot password -->
+                            <a href="">Forgot password?</a>
+                          </div>
+                        </div>
+                  
+                        <!-- Sign in button -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                  
+                        <!-- Register -->
+                        <p>Not a member?
+                          <a href="">Register</a>
+                        </p>
+                  
+                        <!-- Social login -->
+                        <p>or sign in with:</p>
+                        <a type="button" class="btn-floating btn-fb btn-sm">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-tw btn-sm">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-li btn-sm">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-git btn-sm">
+                          <i class="fab fa-github"></i>
+                        </a>
+                  
+                      </form>
+                </div>
             </div>
         </div>
     </div>
-    
 </div>
 
 <footer class="footer">
@@ -528,6 +570,20 @@
         });
     });
 </script>
+
+<style>
+    @media (min-width: 768px) {
+        .carousel-multi-item [class*="col-"] {
+            float: left;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .carousel-multi-item [class*="col-"] {
+            float: left;
+        }
+    }
+</style>
 
 </body>
 
