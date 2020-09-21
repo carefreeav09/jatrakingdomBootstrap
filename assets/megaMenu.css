@@ -1,10 +1,13 @@
 @media all and (min-width: 992px) {
     .navbar{ padding-top: 0; padding-bottom: 0; }
     .navbar .has-megamenu{position:static!important;}
-    .navbar .megamenu{left:0; right:0; width:100%; padding:20px; background: #1c71db90; color: white  }
+    .navbar .megamenu{left:0; right:0; width:100%; padding:20px; background: #2e2e2e90; color: white  }
     .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem; color: white  }
     .col-megamenu ul li a { color : white; padding: 10px; font-size: large }
-    .jatra-kingdom-mini-header { height: 30px }
+    .jatra-kingdom-mini-header { height: 40px }
+    .jatra-kingdom-mini-header ul li {
+        margin-right: 5rem;
+    }
     .todaydeals-image {
         height: 150px;
     }

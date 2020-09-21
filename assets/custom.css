@@ -117,9 +117,9 @@ body {
 
 /*Logo*/
 .jatra-logo {
-    height: 100px;
-    max-width: 12rem;
-    width: 12rem !important
+    height: 150px;
+    max-width: 20rem;
+    width: 20rem !important
 }
 
 /* LOGIN MODAL */
@@ -129,12 +129,12 @@ body {
 }
 
 .banner-image-height {
-    height: 50vh;
+    height: 60vh;
     border-radius: 10px;
 }
 
 .mini-poster-image {
-    min-height: 60vh;
+    min-height: 50vh;
     width: 100%;
 }
 
@@ -168,7 +168,7 @@ body {
 /*star of the day section*/
 
 .star-of-the-day-card {
-    background: white;
+    background: #2e2e2e;
 }
 
 .star-of-the-day-poster-image {
@@ -178,13 +178,13 @@ body {
 
 .star-of-the-day-post-image {
     height: 60vh;
-    width: 100%;
+    width: 90%;
 }
 
 /*icons section*/
 
 .icons-section {
-    background: #0282f9;
+    background: #87a5df;
     padding: 3rem;
     color: white
 }
@@ -194,10 +194,17 @@ body {
     width: 60px;
 }
 
+.footer-section__images {
+  height: 60px;
+  width: 100px;
+  margin-right: 20px;
+}
+
 /*Model kits section*/
 
 .plastic-model-kits-section {
-    background: white;
+    background: transparent;
+    color: white;
 }
 
 /*Full size poster*/
@@ -211,7 +218,7 @@ body {
 
 .full-size-poster {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 
 .centered-right {
@@ -219,6 +226,8 @@ body {
     top: 30%;
     right: 5%;
     width: 25%;
+    color: #eeb236;
+    font-weight: bold
 }
 
 /*Shop by card container*/
@@ -390,5 +399,32 @@ body {
   .subtitle.is-4 {
     font-size: 1.5rem;
   }
+
+  /* Reedit */
+
+  .carousel-multi-item {
+    background: transparent;
+    color: white;
+  }
+
+  .card , .card-body {
+    background: #2e2e2e;
+    color: white;
+    border: 0;
+  }
   
+  img.card-img-top {
+    height: 200px;
+}
   
+
+.carousel-cards:hover {
+  box-shadow: 0 0 8px 4px #cccccc;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1600px) {
+  body {
+    font-size: small;
+  }
+ }
