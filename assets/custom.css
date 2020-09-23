@@ -18,8 +18,21 @@ body {
     border: transparent;
 }
 
+.text-primary{
+  color: #eeb236 !important
+}
+
+.text-secondary {
+  color: #795585 !important
+}
+
 .blue-text {
     color: #87a5df !important;
+}
+
+.btn-outline-blue  {
+  border: 1px solid #87a5df;
+  color: #87a5df
 }
 
 .border-1-white {
@@ -59,7 +72,7 @@ body {
 .footer {
     background: #E4AF21;
     color: #fff;
-    padding: 3rem 1.5rem; }
+    padding: 3rem 1.5rem 0.8rem 1.5rem }
   
   .footer a {
     color: #fff; }
@@ -189,7 +202,7 @@ body {
 /*icons section*/
 
 .icons-section {
-    background: #87a5df;
+    background: #E4AF21;
     padding: 3rem;
     color: white
 }
@@ -200,8 +213,8 @@ body {
 }
 
 .footer-section__images {
-  height: 60px;
-  width: 100px;
+  height: 40px;
+  width: 80px;
   margin-right: 20px;
 }
 
@@ -420,13 +433,13 @@ body {
   }
   
   img.card-img-top {
-    height: 200px;
+    height: 350px;
 }
   
 
 .carousel-cards:hover {
-  box-shadow: 0 0 8px 4px #cccccc;
-  transform: translateY(-10px);
+  box-shadow: 0 0 8px 4px #333333;
+  transform: scale(1.05);
 }
 
 @media (max-width: 1600px) {
@@ -475,4 +488,66 @@ body {
 .product-page-descriptions-tabs {
   border: 1px solid #757575;
   padding: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 1%
+}
+
+.card-image-container {
+  position: relative;
+
+}
+
+.card-image-container .card-img-top {
+  height: 350px
+}
+
+.card-image-btn-left {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  display: none;
+  background: #33333370;
+}
+
+.card-image-btn-left:hover {
+  background: #795585;
+}
+
+.card-image-btn-right:hover {
+  background: #795585;
+}
+
+
+.card-image-btn-right {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  display: none;
+  background: #33333370;
+}
+
+.carousel-cards:hover .card-image-btn-left, 
+.carousel-cards:hover .card-image-btn-right {
+  display: block
+}
+
+.shop-by-characters-items {
+  text-decoration: none;
+  color: #E4AF21;
+}
+
+.shop-by-characters-items:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #E4AF21;
+}
+
+.trending-section .carousel-cards .card-img-top {
+  height: 250px
+}
+
+.carousel-cards-small .card-img-top {
+  height: 250px;
 }

@@ -11,4 +11,7 @@
     .todaydeals-image {
         height: 150px;
     }
+    .jatra-kingdom-mini-header a.nav-link.dropdown-toggle {
+        font-size: larger;
+    }
 }
