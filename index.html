@@ -57,14 +57,18 @@
 
                 <div class="row w-100">
                     <div class="col-sm-12 offset-md-2 col-md-8">
-                        <h1 class="text-white">Import NOP SEARCH HERE</h1>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search">
+
                     </div>
 
                     <div class="col-sm-12 col-md-2 text-right">
+
+                        <i class="far fa-heart text-white mr-md-5 fa-lg"></i>
+
                         <i class="fas fa-shopping-cart text-white mr-md-5 fa-lg"></i>
 
                         <a data-toggle="modal" data-target="#modalLoginForm">
-                            <i class="fas fa-shopping-cart text-white fa-lg"></i>
+                            <i class="fas fa-user text-white fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -73,10 +77,12 @@
     </nav>
 
     <nav class="navbar navbar-expand-lg jatra-kingdom-mini-header">
-        <div class="container-fluid pl-5">
+        <div class="container-fluid pl-5 mini-nav-container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+
+                <img src="./assets/images/jatra.png" alt="" class="jatra-logo">
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
 
@@ -357,14 +363,20 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                 </ul>
+
+
             </div> <!-- navbar-collapse.// -->
+
+            <div class="mobile-only-search">
+                <input type="text" class="form-control" placeholder="search"> 
+            </div>
         </div>
 
 
     </nav>
 
     <div class="container-fluid">
-        <div class="section banner-section my-md-5">
+        <div class="section banner-section my-md-5 my-3">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -628,13 +640,13 @@
             <div class="row w-100">
                 <div class="col-sm-12 col-md-3 py-2 px-0">
                     <div class="row blue-text">
-                        <div class="col-6">
+                        <div class=" col-sm-12 col-md-6">
                             <h1 class="vertical-text font-weight-bold display-4 blue-text">
                                 MINI FIGURES
                             </h1>
                         </div>
 
-                        <div class="col-6 px-0">
+                        <div class="col-sm-12 col-md-6 px-0 d-none d-md-block ">
                             <p class="blue-text">
                                 Mini Figurines by Funko Pop Collection <br>
                                 <br>
@@ -736,7 +748,7 @@
         </div>
     </div>
 
-    <div class="section icons-section my-md-5">
+    <div class="section icons-section my-md-5 my-3">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -765,7 +777,9 @@
 
     <div class="container-fluid">
         <div class="section plastic-model-kits-section px-md-5 py-md-2 my-md-5">
-            <h5>PLASTIC MODEL KITS</h5>
+            <h1 class="text-left blue-text">
+                Pastic Modal Kits
+            </h1>
 
             <div id="multi-item-example-2" class="carousel slide carousel-multi-item" data-ride="carousel">
                 <a class="carousel-control-prev" href="#multi-item-example-2" role="button" data-slide="prev">
@@ -784,7 +798,7 @@
                     <!--First slide-->
                     <div class="carousel-item active">
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -796,7 +810,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
@@ -809,7 +823,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -822,7 +836,19 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
+                            <div class="card mb-2 carousel-cards">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
@@ -834,24 +860,22 @@
                         </div>
 
                     </div>
-                    <!--/.First slide-->
 
-                    <!--Second slide-->
                     <div class="carousel-item">
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
@@ -859,11 +883,12 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
 
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -871,72 +896,35 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
 
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item">
-
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
+                                    <h5 class="card-title">Card title</h5>                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 px-3 ">
+                        
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Card title</h5>                                   
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <!--/.Third slide-->
 
                 </div>
                 <!--/.Slides-->
@@ -960,18 +948,19 @@
                     <!--First slide-->
                     <div class="carousel-item active">
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
@@ -979,11 +968,12 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
 
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -991,41 +981,51 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
 
+                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Card title</h5>                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-5-elements px-3 ">
+                            <div class="card mb-2 carousel-cards">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>                                   
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <!--/.First slide-->
 
-                    <!--Second slide-->
                     <div class="carousel-item">
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-
                                    
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
@@ -1038,7 +1038,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -1051,77 +1051,30 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item">
-
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                   
+                                    <h5 class="card-title">Card title</h5>                                   
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 px-3 ">
-                            <div class="card mb-2 carousel-cards">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 px-3 ">
+                        
+                        <div class="col-5-elements px-3 ">
                             <div class="card mb-2 carousel-cards">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                   
+                                    <h5 class="card-title">Card title</h5>                                   
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <!--/.Third slide-->
 
                 </div>
                 <!--/.Slides-->
@@ -1129,7 +1082,7 @@
             </div>
         </div>
 
-        <div class="section full-size-poster mb-md-5">
+        <div class="section full-size-poster mb-md-5 my-3">
             <div class="full-size-poster-container">
                 <img src="./assets/images/SW1-banner.webp" alt=""
                     class="full-size-poster">
@@ -1228,7 +1181,7 @@
 
         <div class="section super-exclusive-section my-5">
             <div class="text-right text-warning">
-                <h2 class="display-4 ">
+                <h2 class="display-4 super-exlusive-section">
                     S U P E R <span class="ml-5" /> E X C L U S I V E
                 </h2>
 
@@ -1260,9 +1213,9 @@
             </div>
         </div>
 
-        <div class="section trending-section px-3">
+        <div class="section trending-section px-3 my-5">
             <div class="row">
-                <div class="col-sm-12 col-md-3 px-3">
+                <div class="col-sm-12 col-md-3 px-3 my-3">
                     <div class="blue-text text-left">
                         <h2 class="font-weight-bold">TRENDING</h2>
 
@@ -1352,7 +1305,7 @@
             </div>
         </div>
 
-        <div class="section comic-book-section px-3">
+        <div class="section comic-book-section px-3 my-5">
             <div class="row">
                 <div class="col-sm-12 col-md-10">
                     <div class="row">
@@ -1489,6 +1442,23 @@
         </div>
     </div>
 
+    <div class="mobile-only-nav">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">DEALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+    </div>
+
     <footer class="footer">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -1508,22 +1478,22 @@
                     <h6 class="font-weight-bold text-uppercase mt-3 mb-4">WE ARE SOCIAL</h6>
 
                     <div class="row">
-                        <div class="col-sm-3 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-facebook"></i>
                         </div>
-                        <div class="col-sm-4 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-twitter"></i>
                         </div>
-                        <div class="col-sm-4 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-instagram"></i>
                         </div>
-                        <div class="col-sm-4 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-youtube"></i>
                         </div>
-                        <div class="col-sm-4 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-snapchat"></i>
                         </div>
-                        <div class="col-sm-4 col-md-4 py-2">
+                        <div class="col-xs-2 col-sm-2 col-md-4 py-2">
                             <i class="fab fa-lg fa-pinterest"></i>
                         </div>
                     </div>
@@ -1549,7 +1519,7 @@
                     <h6 class="font-weight-bold text-uppercase mt-3 mb-4">JOIN OUR COMMUNITY</h6>
 
                     <div class="row">
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6 center-footer-image">
                             <h6>
                                 Viber <i class="fab fa-viber fa-lg"></i>
                             </h6>
@@ -1560,14 +1530,12 @@
                             </figure>
                         </div>
 
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6 center-footer-image">
                             <h6>
                                 Whatsapp <i class="fab fa-whatsapp fa-lg"></i>
                             </h6>
-                            <figure class="image image__128x128 mb-0">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSelZ4IZDbh8mvcv21lyz_0v2AB5XF92b2gVw&usqp=CAU"
-                                    alt="company logo" class="image">
-                            </figure>
+                                    alt="company logo" class="image image__128x128">
                         </div>
                     </div>
                 </div>

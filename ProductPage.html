@@ -382,8 +382,14 @@
 
 
                 <div class="row">
-                    <div class="col-md-8 flex-space-between">
-                        <div class="flex-vertical-center">
+                    <div class="col-md-8">
+
+                        <div class="image-gallery-container" style="flex-grow: 1">
+                            <!-- Expanded image -->
+                            <img id="expandedImg" style="width:100%">
+                        </div>
+
+                        <div class="flex-horizontal-center">
 
                             <img src="https://picsum.photos/200/300" alt="Nature" onclick="myFunction(this);"
                                 class="product-gallery-images">
@@ -395,101 +401,84 @@
                                 class="product-gallery-images">
 
                         </div>
-                        <div class="image-gallery-container" style="flex-grow: 1">
-                            <!-- Expanded image -->
-                            <img id="expandedImg" style="width:100%">
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 text-white border-1-black p-3 product-page-card ">
+                        <div>
+                            <p class="font-weight-bold">PRE ORDER</p>
+
+                            <h3>PRODUCT NAME</h3>
+                            <br>
+                            <h6>PRICE - </h6>
+                            <br>
+                            <h6>SKU - </h6>
+                            <br>
+    
+                            <h6>DISCOUNT CODE - </h6>
+                            <br>
+    
+                            <h6>COLOR -
+                                <span class="color-boxes" style="background: red;"></span>
+                                <span class="color-boxes" style="background: green;"></span>
+                                <span class="color-boxes" style="background: blue;"></span>
+                            </h6>
+                            <br>
+    
+                            <h6>Size -
+                                <span>
+                                    <a href="">XS</a>
+                                    <a href="">S</a>
+                                    <a href="">M</a>
+                                    <a href="">L</a>
+                                    <a href="">XL</a>
+                                    <a href="">XXL</a>
+                                </span>
+                            </h6>
+                            <br>
+                            <h6>Quantity
+                                <span class="btn btn-default text-white" onclick="decreaseQuantity()">
+                                    -
+                                </span>
+                                <input type="number" style="width: 80px;" id="quantity" value="1">
+                                <span class="btn btn-default text-white" onclick="increaseQuantity()">
+                                    +
+                                </span>
+    
+                            </h6>
                         </div>
+
+
+                        <div class="flex-space-between w-100">
+                            <button type="button" class="btn btn-primary mx-2 btn-block mt-2">Buy Now </button>
+                            <button type="button" class="btn btn-primary mx-2 btn-block" data-toggle="modal"
+                                data-target="#cartModal">Add to Cart</button>
+                            <button type="button" class="btn btn-primary mx-2 btn-block">Bargain</button>
+                        </div>
+
                     </div>
 
-                    <div class="col-sm-12 col-md-4 text-white border-1-black p-3">
-                        <p class="font-weight-bold">PRE ORDER</p>
-
-                        <h3>PRODUCT NAME</h3>
-                        <br>
-                        <h6>PRICE - </h6>
-                        <br>
-                        <h6>SKU - </h6>
-                        <br>
-
-                        <h6>DISCOUNT CODE - </h6>
-                        <br>
-
-                        <h6>COLOR -
-                            <span class="color-boxes" style="background: red;"></span>
-                            <span class="color-boxes" style="background: green;"></span>
-                            <span class="color-boxes" style="background: blue;"></span>
-                        </h6>
-                        <br>
-
-                        <h6>Size -
-                            <span>
-                                <a href="">XS</a>
-                                <a href="">S</a>
-                                <a href="">M</a>
-                                <a href="">L</a>
-                                <a href="">XL</a>
-                                <a href="">XXL</a>
-                            </span>
-                        </h6>
-                        <br>
-                        <h6>Quantity
-                            <span class="btn btn-default text-white" onclick="decreaseQuantity()">
-                                -
-                            </span>
-                            <input type="number" style="width: 80px;" id="quantity" value="1">
-                            <span class="btn btn-default text-white" onclick="increaseQuantity()">
-                                +
-                            </span>
-
-                        </h6>
-
-                        <div class="flex-space-around"></div>
-                        <button type="button" class="btn btn-primary mx-2">Buy Now </button>
-                        <button type="button" class="btn btn-primary mx-2" data-toggle="modal"
-                            data-target="#cartModal">Add to Cart</button>
-                        <button type="button" class="btn btn-primary mx-2">Bargain</button>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 pr-0">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th colspan="3" scope="col" style="text-align: center;color: #e4af21">HOME DELIVERY</th>th>
-                                </tr>
-                                <tr>
-                                    <th class="text-center" style="color: #795585">
-                                        LOCATION
-                                    </th>
-        
-                                    <th class="text-center" style="color: #795585">
-                                        CHARGES
-                                    </th>
-        
-                                    <th class="text-center" style="color: #795585">
-                                        PAYMENT
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center text-white">
-                                        <h6>Sukedhara , Kathmandu Nepal</h6>
-
-                                        <a href="">Change</a>
-                                    </td>
-                                    <td class="text-center text-white">
-                                        <h6>Delivery in 2-3 days</h6>
+                    <div class="col-sm-12 col-md-8">
+                        <h4 class="text-white mt-5">
+                            HOME DELIVERY
+                        </h4>
+    
+                        <div class="flex-space-between">
+                            <div class="border-1-black text-white p-4 py-5">
+                                <h6>Sukedhara , Kathmandu Nepal</h6>
+    
+                                            <a href="">Change</a>
+                            </div>
+                            <div class="border-1-black text-white p-4 py-5">
+                                <h6>Delivery in 2-3 days</h6>
 
                                         <h6>Delivery Charge : NRS 80</h6>
-                                    </td>
-                                    <td class="text-center text-white">
-                                        <h6>Cash on Delivery available</h6>
+                            </div>
+                            <div class="border-1-black text-white p-4 py-5">
+                                <h6>Cash on Delivery available</h6>
 
                                         <h6>khalti payment available</h6>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -506,46 +495,41 @@
                 <div class="tab-content  pt-2 text-white" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6 mb-2">
+                            <div class="com-sm-12 col-md-12 mb-2 text-center">
                                 <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
+                                    alt="thumbnail"  style="width: 150px">
                                 <br>
                                 <h6 class="mt-1">Product Name</h6>
                                 <h6>Price</h6>
                             </div>
 
-                            <div class="col-sm-12 col-md-6 mb-2">
+                            <div class="com-sm-12 col-md-12 mb-2 text-center">
                                 <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
+                                    alt="thumbnail"  style="width: 150px">
                                 <br>
                                 <h6 class="mt-1">Product Name</h6>
                                 <h6>Price</h6>
                             </div>
 
-                            <div class="col-sm-12 col-md-6 mb-2">
+                            <div class="col-sm-12 col-md-12 mt-5 text-center">
                                 <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
+                                    alt="thumbnail"  style="width: 150px">
                                 <br>
                                 <h6 class="mt-1">Product Name</h6>
                                 <h6>Price</h6>
                             </div>
-                            <div class="col-sm-12 col-md-6 mb-2">
+
+                            <div class="col-sm-12 col-md-12 mt-5 text-center">
                                 <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
+                                    alt="thumbnail"  style="width: 150px">
                                 <br>
                                 <h6 class="mt-1">Product Name</h6>
                                 <h6>Price</h6>
                             </div>
-                            <div class="col-sm-12 col-md-6 mb-2">
+
+                            <div class="col-sm-12 col-md-12 mt-5 text-center">
                                 <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
-                                <br>
-                                <h6 class="mt-1">Product Name</h6>
-                                <h6>Price</h6>
-                            </div>
-                            <div class="col-sm-12 col-md-6 mb-2">
-                                <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
-                                    alt="thumbnail" class="img-thumbnail" style="width: 200px">
+                                    alt="thumbnail"  style="width: 150px">
                                 <br>
                                 <h6 class="mt-1">Product Name</h6>
                                 <h6>Price</h6>
@@ -558,83 +542,38 @@
          </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="my-5 ">
-            <ul class="nav nav-tabs nav-fill mt-md-5 product-page-nav-tabs" id="descriptionTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#descriptions" role="tab"
-                        aria-controls="descriptions" aria-selected="true">Description</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specifications" role="tab"
-                        aria-controls="specifications" aria-selected="false">Specifications</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab"
-                        aria-controls="reviews" aria-selected="false">Reviews</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="return-tab" data-toggle="tab" href="#returnPolicy" role="tab"
-                        aria-controls="returnPolicy" aria-selected="false">Return Policy</a>
-                </li>
-            </ul>
-            <div class="tab-content product-page-descriptions-tabs pt-2 text-white" id="myTabContent">
-                <div class="tab-pane fade show active" id="descriptions" role="tabpanel" aria-labelledby="descriptions-tab">
-                    <p class="font-weight-bold">PRE ORDER</p>
-    
-                    <h3>PRODUCT NAME</h3>
-                    <h6>PRICE - </h6>
-                    <h6>SKU - </h6>
-    
-                    <h6>DISCOUNT CODE - </h6>
-    
-                    <h6>COLOR -
-                        <span class="color-boxes" style="background: red;"></span>
-                        <span class="color-boxes" style="background: green;"></span>
-                        <span class="color-boxes" style="background: blue;"></span>
-                    </h6>
-    
-                    <h6>Size -
-                        <span>
-                            <a href="">XS</a>
-                            <a href="">S</a>
-                            <a href="">M</a>
-                            <a href="">L</a>
-                            <a href="">XL</a>
-                            <a href="">XXL</a>
-                        </span>
-                    </h6>
-                    <h6>Quantity
-                        <span class="btn btn-default text-white" onclick="decreaseQuantity()">
-                            -
-                        </span>
-                        <input type="number" style="width: 80px;" id="quantity" value="1">
-                        <span class="btn btn-default text-white" onclick="increaseQuantity()">
-                            +
-                        </span>
-    
-                    </h6>
-                </div>
-                <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem aut fugiat at quos dolores itaque
-                    debitis libero quod architecto aliquam et exercitationem molestias dolorem enim eligendi corrupti,
-                    natus quae.
-                </div>
-                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="specifications-tab">
-                    dipisicing elit. Sequi rem aut fugiat at quos dolores itaque debitis libero quod architecto aliquam
-                    et exercitationem molestias dolorem enim eligendi corrupti, natus quae.
-                </div>
-                <div class="tab-pane fade" id="returnPolicy" role="tabpanel" aria-labelledby="specifications-tab">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem aut fugiat at quos dolores itaque
-                </div>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link description-navs  active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">DESCRIPTION</a>
+                <a class="nav-link description-navs " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">SPECIFICATION</a>
+                <a class="nav-link description-navs " id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">REVIEW</a>
+              </div>
             </div>
-        </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active description-tabs-item" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
+                </div>
+                <div class="tab-pane fade description-tabs-item" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
+                </div>
+                <div class="tab-pane fade description-tabs-item" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
+                </div>
+                <div class="tab-pane fade description-tabs-item" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     
     </div>
     </div>
 
-    <div class="container-fluid text-white border-1 py-5 text-center border-1-black p-2">
+    <div class="container-fluid text-white border-1 py-5 text-center border-1-black p-2 px-5">
 
         <h6>LATEST PRODUCTS</h6>
 
@@ -648,11 +587,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                        <ol class="carousel-indicators">
-                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                            <li data-target="#multi-item-example" data-slide-to="1"></li>
-                            <li data-target="#multi-item-example" data-slide-to="2"></li>
-                        </ol>
+                        
                         <!--/.Indicators-->
 
                         <!--Slides-->

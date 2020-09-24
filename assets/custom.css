@@ -40,7 +40,7 @@ body {
 }
 
 .border-1-black {
-  border: 1px solid #757575;
+  background: #333;
 
 }
 
@@ -136,8 +136,8 @@ body {
 /*Logo*/
 .jatra-logo {
     height: 150px;
-    max-width: 20rem;
-    width: 20rem !important
+    max-width: 15rem;
+    width: 15rem !important
 }
 
 /* LOGIN MODAL */
@@ -285,7 +285,7 @@ body {
     opacity: 0.8;
     cursor: pointer;
     height: 80px;
-    width: auto;
+    width: 100px;
     margin: 5px 10px;
   }
   
@@ -438,7 +438,6 @@ body {
   
 
 .carousel-cards:hover {
-  box-shadow: 0 0 8px 4px #333333;
   transform: scale(1.05);
 }
 
@@ -456,6 +455,14 @@ body {
   align-items: center;
   flex-direction: column;
   }
+
+  .flex-horizontal-center {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   }
+
 
   li.breadcrumb-item {
     font-size: larger;
@@ -550,4 +557,146 @@ body {
 
 .carousel-cards-small .card-img-top {
   height: 250px;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon
+{
+  display: none;
+}
+
+.carousel:hover .carousel-control-prev-icon {
+  display: block
+}
+
+.carousel:hover .carousel-control-next-icon {
+  display: block
+}
+
+.col-5-elements {
+   flex: 0 0 19.5%;
+   max-width: 19.5%;
+}
+
+.carousel-cards .card-img-top, 
+.carousel-cards-small .card-img-top{
+  background-position: center;
+  background-size: cover;
+}
+
+/* MOBILE SCREEN */
+
+.mobile-only-nav {
+  display: none;
+}
+
+.mobile-only-search {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .mobile-only-nav {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .mobile-only-nav ul.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .col-5-elements {
+    max-width: 100%;
+    flex: 0 0 100%
+  }
+
+  .vertical-text {
+    font-size: 22px;
+    transform: rotate(0deg);
+    writing-mode: horizontal-tb;
+  }
+
+  .footer-section__images {
+    height: 20px;
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  .centered-right {
+    display: none;
+  }
+
+  .w-100 {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .footer {
+    padding: 3rem 1.5rem 4rem 1.5rem;
+  }
+
+  .mini-nav-container {
+    padding-left: 0 !important;
+  }
+  
+  .mobile-only-search {
+    display: block;
+  }
+
+  a.nav-link.dropdown-toggle {
+    color: white;
+  }
+
+  .super-exlusive-section {
+    font-size: 180%
+  }
+
+  .jatra-logo {
+    height: 60px;
+    width: 80px !important;
+  }
+
+  .jatra-kingdom-main-header{
+    display: none;
+  }
+
+  .center-footer-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+.product-page-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.description-navs {
+  padding:25px;
+  background-color: #333 !important;
+  color: white
+}
+
+.description-navs.active {
+  border-left: 5px solid #eeb236 !important;
+  border-radius: 0;
+}
+
+.description-tabs-item {
+  min-height: 210px;
+  background-color: #333;
+  color: white;
+  padding: 10px
 }
