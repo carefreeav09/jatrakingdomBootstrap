@@ -153,6 +153,7 @@ body {
 
 .mini-poster-image {
     min-height: 50vh;
+    height: 600px;
     width: 100%;
 }
 
