@@ -701,3 +701,47 @@ body {
   color: white;
   padding: 10px
 }
+
+.contact-us-card {
+  background: transparent;
+  border: 0;
+}
+
+.contact-us-text-column {
+}
+
+.contact-us-card input, .contact-us-card textarea{
+  border: 0;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom:1rem !important;
+  background: transparent;
+}
+
+.contact-us-card input:focus {
+  color: #495057;
+  border-color: gainsboro;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.cartModal .modal-content {
+  background: #333;
+  color: white
+}
+
+.cartModal .boxed-span {
+  background: white;
+  color: black
+}
+
+.checkout-cards .card, .checkout-cards .card-body {
+  background-color: #333333;
+}
+
+.faq-page .collapse .card-body {
+  background: #333333;
+}
+
+.faq-page .card {
+  margin-bottom: 2rem;
+}
