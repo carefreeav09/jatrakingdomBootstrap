@@ -27,7 +27,7 @@ body {
 }
 
 .blue-text {
-    color: #87a5df !important;
+    color: #fff !important;
 }
 
 .btn-outline-blue  {
@@ -70,9 +70,10 @@ body {
 }
 
 .footer {
-    background: #E4AF21;
-    color: #fff;
-    padding: 3rem 1.5rem 0.8rem 1.5rem }
+  background: #E4AF21;
+  color: #fff;
+  padding: 1rem 1.5rem 0.8rem 1.5rem;
+}
   
   .footer a {
     color: #fff; }
@@ -157,16 +158,21 @@ body {
     width: 100%;
 }
 
-.carousel-control-next-icon {
-    padding: 20px;
+.carousel-next-icon {
+    padding: 10px;
     border: 2px solid gainsboro;
     border-radius: 50%;
 }
 
-.carousel-control-prev-icon {
-    padding: 20px;
+.carousel-prev-icon {
+    padding: 10px;
     border: 2px solid gainsboro;
     border-radius: 50%;
+}
+
+.mini-poster-section .carousel-prev-icon,
+.mini-poster-section .carousel-next-icon {
+  transform: translateY(-60px);
 }
 
 .carousel-cards {
@@ -204,7 +210,7 @@ body {
 
 .icons-section {
     background: #E4AF21;
-    padding: 3rem;
+    padding: 1rem;
     color: white
 }
 
@@ -258,10 +264,14 @@ body {
 
 /* Careers page  */
 
-.careers-card-body {
-    background:#2e2e2e ;
+.careers-card-body, .careers-section {
+    background:#333 !important ;
     color: white;
-    border-bottom: 1px solid white
+}
+
+.careers-card-body .card-body {
+  background:#333 !important ;
+  color: white;
 }
 
 
@@ -560,23 +570,27 @@ body {
   height: 250px;
 }
 
-.carousel-control-prev-icon, 
-.carousel-control-next-icon
+.carousel-prev-icon, 
+.carousel-next-icon
 {
   display: none;
 }
 
-.carousel:hover .carousel-control-prev-icon {
+.carousel:hover .carousel-prev-icon {
   display: block
 }
 
-.carousel:hover .carousel-control-next-icon {
+.carousel:hover .carousel-next-icon {
   display: block
 }
 
 .col-5-elements {
    flex: 0 0 19.5%;
    max-width: 19.5%;
+}
+
+.col-5-elements .card-img-top {
+  min-height: 350px;
 }
 
 .carousel-cards .card-img-top, 
@@ -687,7 +701,8 @@ body {
 .description-navs {
   padding:25px;
   background-color: #333 !important;
-  color: white
+  color: white;
+  margin-bottom: 5px;
 }
 
 .description-navs.active {
@@ -744,4 +759,54 @@ body {
 
 .faq-page .card {
   margin-bottom: 2rem;
+}
+
+.carousel-cards {
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+  
+
+.carousel-cards:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+/* .carousel-next-icon {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.carousel-prev-icon {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+} */
+
+.delivery-cards__height {
+  min-height: 150px;
+}
+
+.cartModal .modal-dialog {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100vw !important;
+  max-width: 100vw;
+}
+
+.cartModal .modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  padding: 3rem
+}
+
+.latestProducts--wrapper .carousel-item .carousel-cards {
+  padding: 0 5px !important;
+}
+
+.plastic-model-kits-section .carousel-cards {
+  padding: 0 5px;
 }
