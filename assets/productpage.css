@@ -1,0 +1,45 @@
+.product--dropwdownButton{
+    background: transparent;
+    padding: 0 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+}
+
+.product--dropdownContent {
+    color: white;
+    padding: 0.5rem;
+}
+
+.product--dropdownItem {
+    min-width: 50%;
+    padding: 0.5rem;
+    border-bottom: 3px solid #eeb236;
+}
+
+.form-check-input:checked + .form-check-label {
+    color: #eeb236
+}
+
+.product--main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product--filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product--images {
+    height: 300px !important;
+    width: auto;
+    background-position: center;
+    background-size: contain;
+}

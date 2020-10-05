@@ -153,20 +153,16 @@ body {
 }
 
 .mini-poster-image {
-    min-height: 50vh;
-    height: 600px;
-    width: 100%;
+  min-height: 60vh;
+  height: 640px;
+  width: 100%;
 }
 
 .carousel-next-icon {
-    padding: 10px;
-    border: 2px solid gainsboro;
     border-radius: 50%;
 }
 
 .carousel-prev-icon {
-    padding: 10px;
-    border: 2px solid gainsboro;
     border-radius: 50%;
 }
 
@@ -523,10 +519,12 @@ body {
 
 .card-image-btn-left {
   position: absolute;
-  bottom: 5%;
+  font-size: 22px;
+  bottom: 0%;
   left: 0;
   display: none;
   background: #33333370;
+  padding: 20px;
 }
 
 .card-image-btn-left:hover {
@@ -540,10 +538,12 @@ body {
 
 .card-image-btn-right {
   position: absolute;
-  bottom: 5%;
+  font-size: 22px;
+  bottom: 0%;
   right: 0;
   display: none;
   background: #33333370;
+  padding: 20px;
 }
 
 .carousel-cards:hover .card-image-btn-left, 
@@ -809,4 +809,31 @@ body {
 
 .plastic-model-kits-section .carousel-cards {
   padding: 0 5px;
+}
+
+.plastic-model-kits-section .card-image-container {
+  margin: 0 10px
+}
+
+@media all and (min-width: 992px) {
+  .navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .navbar .has-megamenu {
+      position: static !important;
+  }
+
+  .navbar .megamenu {
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .navbar .nav-link {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
 }
