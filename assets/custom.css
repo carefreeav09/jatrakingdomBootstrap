@@ -705,16 +705,47 @@ body {
   margin-bottom: 5px;
 }
 
+.description-navs-blue {
+  padding:25px;
+  background-color: #333 !important;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
+.description-navs-red {
+  padding:25px;
+  background-color: #333 !important;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
 .description-navs.active {
   border-left: 5px solid #eeb236 !important;
+  color: #eeb236 !important;
+  border-radius: 0;
+}
+
+.description-navs-blue.active {
+  border-left: 5px solid #1b323e !important;
+  color: #1b323e !important;
+  border-radius: 0;
+}
+.description-navs-red.active {
+  border-left: 5px solid #795585 !important;
+  color: #795585 !important;
   border-radius: 0;
 }
 
 .description-tabs-item {
-  min-height: 210px;
-  background-color: #333;
   color: white;
   padding: 10px
+}
+
+.description-navs.active .descriptions-box {
+  border: 1px solid;
+  border-left: white;
 }
 
 .contact-us-card {
