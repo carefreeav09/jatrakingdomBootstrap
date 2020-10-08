@@ -770,7 +770,7 @@ body {
   box-shadow: 0 0 0 0;
 }
 
-.cartModal .modal-content , #remindMeModal .modal-content{
+.cartModal .modal-content , #remindMeModal .modal-content, #addNewLocationModal .modal-content{
   background: #333;
   color: white
 }
@@ -890,4 +890,13 @@ body {
   top: 50%;
   z-index: 2;
 
+}
+
+.checkout-location-box {
+  border: 1px solid gainsboro;
+  padding: 10px
+}
+
+#map {
+  height: 100%;
 }
