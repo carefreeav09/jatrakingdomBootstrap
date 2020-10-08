@@ -404,7 +404,7 @@
                     </div>
 
                     <div class="col-sm-12 col-md-4 text-white border-1-black p-3 product-page-card ">
-                        <div>
+                        <div class="w-100">
                             <h3>PRODUCT NAME</h3>
                             <br>
                             <h6>PRICE - </h6>
@@ -444,6 +444,35 @@
                                 </span>
     
                             </h6>
+
+                            <a type="button" class="mx-2 mt-2" style="cursor : pointer" data-toggle="modal" data-target="#remindMeModal">Remind Me when in stock</a>
+
+                                <div class="modal fade" id="remindMeModal" tabindex="-1" aria-labelledby="remindMeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="remindModalTitle">Remind me</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                  <label for="exampleInputEmail1">Email address</label>
+                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                              </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                         </div>
 
 
@@ -453,7 +482,7 @@
                                 data-target="#cartModal">Add to Cart</button>
                             <button type="button" class="btn btn-primary mx-2 btn-block btn-sm">Bargain</button>
                         </div>
-
+                    
                     </div>
 
                     <div class="col-sm-12 col-md-3">
