@@ -137,8 +137,8 @@ body {
 /*Logo*/
 .jatra-logo {
     height: 150px;
-    max-width: 15rem;
-    width: 15rem !important
+    max-width: 10rem;
+    width: 10rem !important
 }
 
 /* LOGIN MODAL */
@@ -301,7 +301,7 @@ body {
   }
 
   #expandedImg {
-      height:65vh;
+      height:70vh;
   }
 
   .color-boxes {
