@@ -1,7 +1,7 @@
 @media all and (min-width: 992px) {
     .navbar{ padding-top: 0; padding-bottom: 0; }
     .navbar .has-megamenu{position:static!important;}
-    .navbar .megamenu{left:0; right:0; width:100%; padding:20px; background: #113442bf; color: white  }
+    .navbar .megamenu{left:0; right:0; width:100%; padding:20px; background: #113442ed; color: white  }
     .navbar .nav-link{ color: white  }
     .col-megamenu ul li a { color : white; padding: 10px; font-size: large; font-weight: 900; }
     .jatra-kingdom-mini-header { height: 40px }
@@ -13,8 +13,8 @@
     }
     .jatra-kingdom-mini-header a.nav-link.dropdown-toggle {
         font-size: larger;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
     }
 
     .jatra-kingdom-mini-header .has-megamenu.show {
@@ -25,3 +25,39 @@
         background-color: #795585;
     }
 }
+
+.show > .dropdown-menu {
+    animation-name: slidenavAnimation;
+    animation-duration:0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration:0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+  
+    -moz-animation-name: slidenavAnimation;
+    -moz-animation-duration:0.4s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: forwards;
+  }
+  @keyframes slidenavAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slidenavAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

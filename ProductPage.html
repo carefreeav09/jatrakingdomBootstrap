@@ -552,29 +552,28 @@
         <div class="row">
             <div class="col-3">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link description-navs  active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">DESCRIPTION</a>
-                <a class="nav-link description-navs-blue " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">SPECIFICATION</a>
-                <a class="nav-link description-navs-red " id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">REVIEW</a>
+              <a class="nav-link description-navs  active" id="description-tab" data-toggle="pill" href="#descriptionTab" role="tab" aria-controls="descriptionTab" aria-selected="true" onclick="setActiveTab('descriptionTab')">DESCRIPTION</a>
+                <a class="nav-link description-navs-blue " id="specification-tab" data-toggle="pill" href="#specificationTab" role="tab" aria-controls="specificationTab" aria-selected="false" onclick="setActiveTab('specificationTab')">SPECIFICATION</a>
+                <a class="nav-link description-navs-red " id="review-tab" data-toggle="pill" href="#reviewTab" role="tab" aria-controls="reviewTab" aria-selected="false"
+                onclick="setActiveTab('reviewTab')"
+                >REVIEW</a>
               </div>
             </div>
             <div class="col-9 border-1-black text-white descriptions-box">
               <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active description-tabs-item" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="tab-pane fade show active description-tabs-item" id="descriptionTab" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
                 </div>
-                <div class="tab-pane fade description-tabs-item" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="tab-pane fade description-tabs-item" id="specificationTab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
                 </div>
-                <div class="tab-pane fade description-tabs-item" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
-                </div>
-                <div class="tab-pane fade description-tabs-item" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="tab-pane fade description-tabs-item" id="reviewTab" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deserunt temporibus libero porro tempora quidem nostrum tempore nulla delectus quasi beatae vero repudiandae debitis officia neque qui quos, adipisci deleniti!
                 </div>
               </div>
             </div>
           </div>
-    </div>
+        </div>
     
     </div>
     </div>
@@ -1189,6 +1188,32 @@
             e.preventDefault()
             $(this).tab('show')
         })
+
+        let activeTab = 'descriptionTab';
+
+        function setActiveTab(tab) {
+            activeTab = tab;
+
+            let descriptionBox = $('.descriptions-box');
+
+            switch(activeTab) {
+                case 'descriptionTab':
+                    descriptionBox.css("border-left", "5px solid #eeb236");
+                    break;
+                    
+                case 'specificationTab':
+                    descriptionBox.css("border-left", '5px solid #1b323e');
+                    break;
+
+                case 'reviewTab': 
+                    descriptionBox.css('border-left', '5px solid #795585');
+                    break;
+
+                default:
+                descriptionBox.css("border-left", "5px solid #eeb236");
+
+            }
+        }
 
     </script>
 
