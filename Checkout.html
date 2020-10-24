@@ -442,6 +442,10 @@
                                     <div class="col-md-6 my-2">
                                         <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#addNewLocationModal">Add a new Location</button>
                                     </div>
+
+                                    <div class="col-md-6 my-2">
+                                        <button class="btn btn-primary btn-block" onclick="handleBillingSubmit()">Continue</button>
+                                    </div>
                                 </div>
 
                                 
@@ -453,7 +457,7 @@
 
                     <h4 onclick="handleShippingClick()" style="cursor: pointer;">Shipping </h1>
 
-                        <div id="shippingEL" style="display: none;">
+                        <div id="shippingEL" class="not-visible" style="display: none;">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -479,7 +483,7 @@
 
                     <h4 onclick="handlePaymentClick()" style="cursor: pointer;">Payment </h1>
 
-                        <div id="paymentEL" style="display: none;">
+                        <div id="paymentEL" class="not-visible" style="display: none;">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -760,7 +764,7 @@
                         <textarea class="form-control">TextArea</textarea>
                       </div>
                     
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="handleBillingSubmit()">Submit</button>
                   </form>
             </div>
           </div>
@@ -805,41 +809,35 @@
     const activatedTabs = ['billing'];
 
     const handleBillingSubmit = () => {
-        billingEl.style.display = 'none';
-        paymentEl.style.display = 'none';
-        shippingEl.style.display = 'block';
-        activatedTabs.push('shipping');
+        $('#billingEL').slideToggle('slow', function() {
+        })
+
+        $('#shippingEL').slideToggle('slow', function() {
+        })
     };
 
     const handlePaymentSubmit = () => {
-        billingEl.style.display = 'none';
-        paymentEl.style.display = 'block';
-        shippingEl.style.display = 'none';
-        activatedTabs.push('payment');
+        $('#shippingEL').slideToggle('slow', function() {
+            activatedTabs.push('payment');
+        })
+
+        $('#paymentEL').slideToggle('slow', function() {
+        })
     }
 
     const handleBillingClick = () => {
-        billingEl.style.display = 'block';
-        paymentEl.style.display = 'none';
-        shippingEl.style.display = 'none';
+        $('#billingEL').slideToggle('slow', function() {
+        })
     }
 
     const handleShippingClick = () => {
-        if (activatedTabs.includes('shipping')) {
-            billingEl.style.display = 'none';
-            paymentEl.style.display = 'none';
-            shippingEl.style.display = 'block';
-        }
-
+        $('#shippingEL').slideToggle('slow', function() {
+        })
     }
 
     const handlePaymentClick = () => {
-        if (activatedTabs.includes('payment')) {
-            billingEl.style.display = 'none';
-            paymentEl.style.display = 'block';
-            shippingEl.style.display = 'none';
-        }
-
+        $('#paymentEL').slideToggle('slow', function() {
+        })
     }
 
     function showForm() {

@@ -948,3 +948,10 @@ li.breadcrumb-item {
 .plastic-model-kits-section .carousel-cards {
   min-width: 20%;
 }
+
+/* Checkout */
+
+.not-visible {
+  display: none;
+  visibility: 0;
+}
