@@ -1,59 +1,58 @@
-
- @media (max-width: 1920px) {
-
+@media (max-width: 1920px) {
 }
 
 @media (max-width: 1440px) {
-    .mini-poster-image {
-       min-height: 50vh;
-       height: 610px;
-   }
+  .mini-poster-image {
+    min-height: 50vh;
+    height: 610px;
+  }
 }
 
-@media (max-width: 1200px) { 
-    .mini-poster-image {
-        min-height: 60vh;
-        height: 660px;
-    }
- }
+@media (max-width: 1200px) {
+  .mini-poster-image {
+    min-height: 60vh;
+    height: 660px;
+  }
+}
 
+@media (max-width: 768px) {
+  .plastic-model-kits-section .carousel-item {
+    flex-direction: column;
+  }
 
-@media (max-width: 768px) { 
+  .plastic-model-kits-section .carousel-cards {
+    width: 100%;
+  }
 
-    .plastic-model-kits-section .carousel-item {
-        flex-direction: column
-    };
+  .star-of-the-day-post-image {
+    height: 60vh;
+    width: 100%;
+  }
 
-    .plastic-model-kits-section .carousel-cards {
-        width: 100%;
-    }
+  .thumbnails-list {
+    flex-direction: row !important;
+  }
 
-    .star-of-the-day-post-image {
-        height: 60vh;
-        width: 100%;
-    }
+  .product-gallery-images {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 80px;
+    width: 50px !important;
+    margin: 5px 10px;
+  }
 
-    .thumbnails-list {
-        flex-direction: row !important;
-    }
+  .latestProducts--wrapper .carousel-item {
+    flex-direction: column;
+  }
 
-    .product-gallery-images {
-        opacity: 0.8;
-        cursor: pointer;
-        height: 80px;
-        width: 50px !important;
-        margin: 5px 10px;
-    }
+  .descriptions-box {
+    padding: 10px;
+    margin: 0 15px;
+  }
+}
 
-    .latestProducts--wrapper .carousel-item {
-        flex-direction: column;
-    }
- }
+@media (max-width: 992px) {
+}
 
-@media (max-width: 992px) { 
-
- }
-
- @media (max-width: 576px) { 
-    
+@media (max-width: 576px) {
 }
