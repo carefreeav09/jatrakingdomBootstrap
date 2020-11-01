@@ -27,6 +27,11 @@
     .plastic-model-kits-section .carousel-cards {
         width: 100%;
     }
+
+    .star-of-the-day-post-image {
+        height: 60vh;
+        width: 100%;
+    }
  }
 
 @media (max-width: 992px) { 
