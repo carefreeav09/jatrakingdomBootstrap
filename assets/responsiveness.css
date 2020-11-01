@@ -18,14 +18,21 @@
  }
 
 
-@media (max-width: 576px) { 
-    
-}
-
 @media (max-width: 768px) { 
 
+    .plastic-model-kits-section .carousel-item {
+        flex-direction: column
+    };
+
+    .plastic-model-kits-section .carousel-cards {
+        width: 100%;
+    }
  }
 
 @media (max-width: 992px) { 
 
  }
+
+ @media (max-width: 576px) { 
+    
+}
