@@ -32,6 +32,22 @@
         height: 60vh;
         width: 100%;
     }
+
+    .thumbnails-list {
+        flex-direction: row !important;
+    }
+
+    .product-gallery-images {
+        opacity: 0.8;
+        cursor: pointer;
+        height: 80px;
+        width: 50px !important;
+        margin: 5px 10px;
+    }
+
+    .latestProducts--wrapper .carousel-item {
+        flex-direction: column;
+    }
  }
 
 @media (max-width: 992px) { 

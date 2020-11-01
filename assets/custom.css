@@ -955,3 +955,7 @@ li.breadcrumb-item {
   display: none;
   visibility: 0;
 }
+
+.thumbnails-list {
+  flex-direction: row;
+}
