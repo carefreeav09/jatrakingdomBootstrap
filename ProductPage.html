@@ -550,6 +550,31 @@
     </div>
 
     <div class="container-fluid py-5">
+    <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active description-navs" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link description-navs-blue" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link description-navs-red" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+    </ul>
+
+      <div class="tab-content descriptions-box " id="pills-tabContent">
+        <div class="tab-pane fade show active description-tabs-item" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita, esse eaque tempore, placeat explicabo eius sit voluptatibus at amet, dolores optio alias vel officia animi ipsam sunt. Qui, laboriosam.
+            ...</div>
+        <div class="tab-pane fade description-tabs-item" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">... Lorem ipsum dolor sit amet consectetur adipisicing elit. A facere quos fugit repellendus eius, totam laudantium repudiandae cum molestiae ipsa asperiores mollitia modi exercitationem, officiis reprehenderit incidunt, eveniet dolore magni?
+
+        </div>
+        <div class="tab-pane fade description-tabs-item" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus harum debitis voluptate adipisci. Velit veniam, sit perspiciatis et, dicta vero similique, voluptatum in quis quos repellendus eveniet nemo blanditiis est!..</div>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid py-5">
         <div class="row">
             <div class="col-md-3 col-sm-6">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -573,8 +598,8 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
+    </div> -->
     
     </div>
     </div>
@@ -1179,16 +1204,6 @@
         function increaseQuantity() {
             quantity.value = parseInt(quantity.value) + 1;
         }
-
-        $('#myTab a').on('click', function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-        })
-
-        $('#descriptionTabs a').on('click', function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-        })
 
         let activeTab = 'descriptionTab';
 
