@@ -957,5 +957,10 @@ li.breadcrumb-item {
 }
 
 .thumbnails-list {
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.footer--columns {
+  max-width: 20%;
+  width: 20%;
 }

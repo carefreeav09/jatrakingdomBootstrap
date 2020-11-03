@@ -29,10 +29,6 @@
     width: 100%;
   }
 
-  .thumbnails-list {
-    flex-direction: row !important;
-  }
-
   .product-gallery-images {
     opacity: 0.8;
     cursor: pointer;
@@ -48,6 +44,10 @@
   .descriptions-box {
     padding: 10px;
     margin: 0 15px;
+  }
+
+  .thumbnails-list {
+    flex-direction: row;
   }
 }
 
