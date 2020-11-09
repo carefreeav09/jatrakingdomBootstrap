@@ -1002,7 +1002,7 @@ li.breadcrumb-item {
 
 .about-us-parallax {
     /* The image used */
-    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('./images/SW1-banner.webp');
+    background-image: linear-gradient(rgb(0 0 0 / 62%), rgb(0 0 0 / 62%)), url('./images/SW1-banner.webp');
     /* Full height */
     height: 30vh;
 
