@@ -363,33 +363,43 @@
 
 </nav>
 
-<div class="container-fluid my-5">
+<div class="section about-full-banner" id="about-full-banner">
+    <h1 class="text-white display-2 font-weight-bold" id="titleText">We Are Jatra Kingdom</h1>
+</div>
 
-    <h3 class="title text-left mt-5 text-white px-md-5" >About Us</h1>
-        <div class="row px-md-5">
-
-            <div class="col-sm-12 col-md-6 is-size-6 text-white flex-center" style="background: #333;">
-
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, at beatae consequuntur dicta
-                    doloremque, dolores ea illo nemo odio recusandae tempore unde velit! In neque quasi sed similique vitae.
-
-                    <br>
-
-                    <br>
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum placeat ut quibusdam expedita maiores nam saepe ipsam magni architecto culpa cumque quia quo sapiente, itaque, reprehenderit eligendi. Tenetur, animi quod?
-
-
-                </div>
-               
-            </div>
-
-            <div class="col-sm-12 col-md-6 flex-center">
-                <img src="https://picsum.photos/seed/picsum/600" alt="logo" >
+<div class="section jatra-about px-md-5" id="jatra-about">
+    <div class="container-fluid flex-space-between">
+        <img src="./assets/images/superman.jpg" alt="" class="jatra-about-image-left">
+    
+        <div class="jatra-about-text w-50 px-md-5">
+            <h1 class="text-center text-white">
+                    JATRA KINGDOM
+            </h1>
+        
+            <br>
+        
+            <h4 class="text-white">
+                    We are jatra kingdom and we kick ASS.
+                    We are jatra kingdom and we kick ASS.
+            </h4>
         </div>
-            
+        
+        <img src="./assets/images/flash.jpg" alt="" class="jatra-about-image-right">  
+    </div>
+</div>
+
+<div class="section" style="height: 70vh" id="parallax-section">
+    <div class="about-us-parallax" style="height: inherit;">
+        <div class="container-fluid px-md-5  parallax-content flex-center text-white">
+            <h3 class="display-2" id='parallax-title-text'>
+                IN THE BEGINNING
+            </h3>
+
+            <h6 class="parallax-content-text p-5" id='parallax-item-text'>
+                In 1994, Sideshow embarked on a mission of connecting people with their favorite characters and icons from the worlds of film, television, comic books and popular culture. Today, we are a specialty manufacturer and distributor of the most highly sought-after licensed and original collectible products, sustained by a passionate worldwide community that is committed to the lifestyle of collecting figural art.
+            </h6>
         </div>
+    </div>
 </div>
 
 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -569,6 +579,10 @@
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -576,6 +590,33 @@
             e.stopPropagation();
         });
     });
+</script>
+
+<script>
+			// init controller
+            var controller = new ScrollMagic.Controller();
+            
+            gsap.to('#titleText', 3, { opacity: 1});
+                                    
+                let tl = new TimelineMax();
+                let animatePictures = tl.fromTo('.jatra-about-text', { opacity : 0, y:20} , {opacity: 1, y: -20})
+                                        .fromTo('.jatra-about-image-left', { opacity : 0} , {opacity: 1, x: 10, duration: 1}, '1')
+                                        .fromTo('.jatra-about-image-right', { opacity : 0} , {opacity: 1, x: -10, duration: 1}, '1');
+
+                let tlParallax = new TimelineMax();
+                let animateParallaxItems = tlParallax.fromTo('#parallax-title-text', { opacity: 0, x: -20}, { opacity: 1, x: 20})
+                .fromTo('#parallax-item-text', { opacity: 0, x: 20}, {opacity: 1, x: -20}, '0')
+
+                var scene = new ScrollMagic.Scene({triggerElement: "#jatra-about", duration: 300})
+							// animate color and top border in relation to scroll position
+							.setTween(animatePictures) // the tween durtion can be omitted and defaults to 1
+                            .addTo(controller);
+                            
+                            var parallaxScene = new ScrollMagic.Scene({
+                                triggerElement: '#parallax-section',
+                            })
+                            .setTween(animateParallaxItems)
+                            .addTo(controller)
 </script>
 
 <style>

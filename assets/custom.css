@@ -964,3 +964,62 @@ li.breadcrumb-item {
   max-width: 20%;
   width: 20%;
 }
+
+.about-full-banner {
+  height: 100vh;
+  /* width: 100vw; */
+  background: url('./images/asscreedvalh-BANNER.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titleText{
+  opacity: 0
+}
+
+#jatra-about {
+  height: 70vh;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jatra-about-image-left {
+  height: 50vh;
+  margin-top: 20vh;
+  width: 300px;
+}
+
+.jatra-about-image-right {
+  height: 50vh;
+  margin-top: 20vh;
+  width: 300px;
+}
+
+.about-us-parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('./images/SW1-banner.webp');
+    /* Full height */
+    height: 30vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(to bottom, transparent 10%, black);
+}
+
+.parallax-content {
+  height: 100%;
+  color: white
+}
+
+.parallax-content-text {
+  line-height: 2rem;
+}
+
