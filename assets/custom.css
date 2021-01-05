@@ -1066,5 +1066,13 @@ li.breadcrumb-item {
 }
 
 .jatra-kingdom-main-header {
-  display: block;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jatra-logo {
+  height: 120px;
+  width: 10rem !important;
 }
