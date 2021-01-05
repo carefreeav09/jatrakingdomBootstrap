@@ -644,12 +644,13 @@ li.breadcrumb-item {
   display: none;
 }
 
+
 @media screen and (max-width: 768px) {
   .mobile-only-nav {
     display: block;
     position: fixed;
     z-index: 10000;
-    background: white;
+    background: #e4af21;
     bottom: 0;
     width: 100%;
     padding: 10px 0;
@@ -660,6 +661,12 @@ li.breadcrumb-item {
     justify-content: space-around;
     align-items: center;
   }
+
+  .mobile-nav-item >  a {
+    color: white;
+    font-weight: bold;
+  }
+}
 
   .col-5-elements {
     max-width: 100%;
@@ -1023,3 +1030,41 @@ li.breadcrumb-item {
   line-height: 3rem;
 }
 
+.title-texts {
+  font-size: initial;
+}
+
+/*MOBILE VIEW*/
+
+@media only screen and (max-width: 768px) {
+  img.card-img-top, .carousel-cards-small .card-img-top, .carousel-cards .card-img-top  {
+    height: 450px;
+    max-height: 100vh;
+  }
+
+  .trending-section .carousel-cards .card-img-top {
+    height: 450px;
+  }
+
+  .section-titles-small {
+    display: block;
+    text-align: left;
+  }
+
+  .title-texts {
+    font-size: 36px !important;
+    text-transform: uppercase;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .jatra-kingdom-main-header {
+    display: none !important;
+  }
+}
+
+.jatra-kingdom-main-header {
+  display: block;
+}
